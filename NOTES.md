@@ -138,3 +138,8 @@ No large downloads were made (metadata and a 10 kB API response only).
 - `pilot/findiv_pilot.py` (run with `python -I`), output `pilot/findiv_pilot_results.csv`. n = 500, seed 0. Style Vendi: FPB 2.57, SEntFiN 4.86, calls 5.82, TFNS 9.47, retail tweets 14.51. Semantic Vendi lowest for calls (64.1). Graph Entropy (default params) nearly constant across datasets (3101–3103 semantic) → flagged as a question for her.
 - Decision D4.4: label the pilot "feasibility, not a result" everywhere (one seed, small n).
 
+### 4.5 Proposal 4 (I7, Perceived Voice)
+- Read Nguyen & Rosseel (2025) method via HTML fetch: 70 tweet pairs, 7 spelling types, 217 UK Prolific raters (9,114 ratings), 12 LLMs, paired vs independent prompts, difference scores, pseudoword control; future work §6.1–6.4.
+- StockTwits JQD:DM dataset: article page opened (Li, Al Ansari & Kaufman 2025); PDF link **refused (PROVENANCE_REQUIRED)**; no data host found by search → "ask authors" in the proposal.
+- EmTract (Vamossy & Skog) offers 10k annotated StockTwits messages publicly (arXiv 2112.03868 text) — background resource, not used.
+
