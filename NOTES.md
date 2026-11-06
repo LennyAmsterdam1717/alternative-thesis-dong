@@ -132,3 +132,9 @@ No large downloads were made (metadata and a 10 kB API response only).
 - Decision D4.2: I2 (visibility prior) folded in as RQ2's firm-size/country analysis rather than a separate thesis.
 - Decision D4.3: Kodak example kept at "late July 2020" (exact day not verified in this run).
 
+### 4.4 Proposal 3 (I3, FinDiv) — pilot run
+- Installed CPU-only torch (download.pytorch.org reachable), `emb-diversity` 0.1.0 (wheel from PyPI) and `sentence-transformers` 6.2 in a venv; models `all-MiniLM-L6-v2` and `AnnaWegmann/Style-Embedding` downloaded from HF.
+- Downloaded five small public parquet files via the HF parquet API into `/tmp/findiv_data` (not committed): FPB mirror (4,846 rows), TFNS (9,543), SEntFiN (11,412), financial tweets (38,091), earnings-call sentences (6,851). Original `takala/financial_phrasebank` has no parquet export ("Cannot get the config names") → used `warwickai/financial_phrasebank_mirror`.
+- `pilot/findiv_pilot.py` (run with `python -I`), output `pilot/findiv_pilot_results.csv`. n = 500, seed 0. Style Vendi: FPB 2.57, SEntFiN 4.86, calls 5.82, TFNS 9.47, retail tweets 14.51. Semantic Vendi lowest for calls (64.1). Graph Entropy (default params) nearly constant across datasets (3101–3103 semantic) → flagged as a question for her.
+- Decision D4.4: label the pilot "feasibility, not a result" everywhere (one seed, small n).
+

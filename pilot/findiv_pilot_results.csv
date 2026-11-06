@@ -1,0 +1,6 @@
+dataset,repo,register,text_col,rows_in_split,n_sampled,semantic:graph_entropy,semantic:vendi_score,semantic:mean_pw_dist,style:graph_entropy,style:vendi_score,style:mean_pw_dist
+"FPB (news, 2014)",warwickai/financial_phrasebank_mirror,news,sentence,4846,500,3102.2203,96.8378,0.8572,3026.2592,2.5738,0.1973
+TFNS (finance tweets),zeroshot/twitter-financial-news-sentiment,news-tweets,text,9543,500,3103.2347,104.5621,0.8498,3058.2809,9.4734,0.5866
+SEntFiN (headlines),tasksource/sentfin,headlines,sentence1,11412,500,3102.751,88.0932,0.8213,3042.8983,4.8553,0.3533
+FinTweets (retail tweets),TimKoornstra/financial-tweets-sentiment,retail social,tweet,38091,500,3103.0134,95.0445,0.8256,3072.6694,14.5136,0.7899
+Earnings calls (sentences),jlh-ibm/earnings_call,calls,text,6851,500,3101.4157,64.0742,0.7703,3027.7846,5.8169,0.5319
