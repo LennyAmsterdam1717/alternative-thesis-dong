@@ -57,3 +57,27 @@ Earlier memory/project context used: Frank took HCML (COMPAS fairness assignment
 - **D1.3** HCML repo empty → course summary built from her homepage, Frank's recorded coursework and public student summaries (secondary; topic list only).
 - **D1.4** Status discrepancy: her own site and the research portal say Associate Professor; the UU staff page says assistant professor. I follow the brief (Associate).
 
+## 2. Phase 1: landscape (6 Nov, 18:50–20:15)
+
+### 2.1 Queries (all via WebSearch; "ext" = extended mode)
+- T1: `LLM look-ahead bias memorization financial forecasting 2026 arXiv` (ext); `pretraining data frequency memorization firm entities OLMo Dolma infini-gram financial news look-ahead` (ext)
+- T2: `financial sentiment analysis robustness domain shift adversarial paraphrase 2026` (ext); `entity bias financial sentiment LLM company name counterfactual substitution 2025 2026` (ext); `"Battle of transformers" adversarial attacks financial sentiment models arXiv …`; `financial sentiment model generalization news to social media StockTwits Reddit register slang emoji out-of-domain evaluation 2026` (ext); `data diversity financial sentiment training data selection robustness out-of-distribution finance NLP 2026` (ext)
+- T3: `wallstreetbets language community identity meme stocks computational analysis 2026` (ext); `StockTwits retail investor posts NLP dataset 2025 2026 arXiv sentiment hype coordination` (ext); `wallstreetbets collective identity "we" pronouns linguistic convergence newcomers GameStop computational` (ext); `Reddit wallstreetbets dataset 2025 2026 arXiv LLM meme stock retail coordination language`
+- T4: `earnings call transcripts language management evasiveness LLM 2026 arXiv dataset` (ext); `financial NLP benchmarks data quality duplicates annotation disagreement Financial PhraseBank 2025 2026 analysis` (ext); `generative AI written corporate disclosures earnings calls 10-K LLM-generated text detection prevalence market reaction 2026` (ext)
+- T5: `LLM financial advice bias investor demographics robo-advisor audit 2026 arXiv` (ext); `dialect African American English non-native English prompt LLM financial advice quality disparity` (ext); `sociolinguistic variation user prompt writing style changes LLM advice quality audit 2026` (ext); `user study trust LLM financial advice explanations retail investors experiment 2026 arXiv overreliance` (ext)
+- T6: `central bank communication NLP LLM 2026 FOMC hawkish dovish measurement validity` (ext); `tariff announcements 2025 stock market text analysis LLM news sanctions geopolitical risk measure 2026 arXiv` (ext); `LLM hawkish dovish measurement prompt sensitivity cross-model agreement validity ECB speeches multilingual 2026`
+
+### 2.2 Full texts opened in Phase 1
+Gao, Jiang & Yan (2512.23847, PDF), Benhenda (2601.13770, PDF), Kong et al. (2602.14233, HTML first 100k chars), Choukhmane et al. (2608.01607, HTML first 100k chars).
+
+### 2.3 Access results
+- arXiv HTML for 2610.23060 (Bakshi et al.): **rate-limited twice** → kept at [ABS] from the abs-page text in search results; not retried.
+- ScienceDirect (Battle of Transformers JBF 2026; FRL 2026 10-K AI paper): not fetched (blocked in earlier runs) → abstract from SFI/RePEc pages [ABS].
+- SSRN abstracts appear in search results (Entity Neutering, Chen & Wang, Redigolo & Marcarini) → [ABS].
+- Tag convention (decision D2.1): **[ABS]** covers abstract text read either from a fetched page or from the paper's own arXiv/ACL/SSRN/publisher page as returned by WebSearch (the earlier runs called the latter `[ABS-s]`). Snippets from aggregators (Pith, papers.cool, ResearchGate) count as [ABS] only when they reproduce the abstract; otherwise [UNVERIFIED].
+
+### 2.4 Decisions
+- **D2.2** Six themes kept as given in the brief (T1–T6). Crowding map at the top of `lit_review_dong.md`.
+- **D2.3** The three clearest openings for her expertise: T1 × data-centred NLP (memorisation explained by open-corpus frequency), T5 × sociolinguistics (dialect/register of the asker), T4 × DataDivers (diversity of financial NLP datasets → robustness).
+- **D2.4** Killed early (not carried to Phase 2): "detect AI-written corporate disclosures and their market effect" (JAR 2026 + two SSRN 2026 papers + FRL 2026); "new evasion benchmark" (three 2026 benchmarks, paid data).
+
