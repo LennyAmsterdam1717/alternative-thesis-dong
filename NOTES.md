@@ -81,3 +81,23 @@ Gao, Jiang & Yan (2512.23847, PDF), Benhenda (2601.13770, PDF), Kong et al. (260
 - **D2.3** The three clearest openings for her expertise: T1 × data-centred NLP (memorisation explained by open-corpus frequency), T5 × sociolinguistics (dialect/register of the asker), T4 × DataDivers (diversity of financial NLP datasets → robustness).
 - **D2.4** Killed early (not carried to Phase 2): "detect AI-written corporate disclosures and their market effect" (JAR 2026 + two SSRN 2026 papers + FRL 2026); "new evasion benchmark" (three 2026 benchmarks, paid data).
 
+## 3. Phase 2: ten ideas with kill tests (6 Nov, 20:15–21:20)
+
+### 3.1 Kill-test queries (in addition to the Phase 1 queries reused per idea, listed in `ideas_10.md`)
+- `open-data language model memorization stock returns firm news frequency training corpus explains look-ahead OLMo Pythia finance` (ext) → I1
+- `measuring diversity of financial sentiment datasets embedding diversity cross-dataset generalization FiQA Financial PhraseBank StockTwits` (ext) → I3
+- `hype detection retail investor posts validated measure pump and dump social media stocks 2025 2026 annotation` (ext) → I9
+- `Roaring Kitty 2024 return GameStop Reddit language analysis 2025 meme stock revival Opendoor social media study` (ext) → I5 (only news coverage; no study)
+- `annotator disagreement perspectivist financial sentiment retail versus professional annotators label variation finance NLP` (ext) → I8
+- `faithfulness of LLM explanations financial sentiment rationales human analyst evaluation plausibility 2026` (ext) → K1 killed
+- `human versus LLM perception financial social media posts credibility bullishness ratings spelling style investors experiment` (ext) → I7
+- `LLM financial sentiment bias toward large-cap well-known firms pretraining exposure frequency explains entity bias 2026` → I2
+- `robustness financial sentiment classifiers spelling variation slang sarcasm perturbation benchmark CheckList finance tweets` → I4
+- Full text opened: Bisharat & Hean 2609.20198 (PDF).
+
+### 3.2 Decisions
+- **D3.1** Rejected and replaced: K1 (faithful narratives of stock predictions; 2609.38869), K2 (AI-written disclosures; JAR 2026 etc.), K3 (evasion benchmark; three 2026 benchmarks).
+- **D3.2** Background-only prior work (e.g. Lucchini et al. 2022 for WSB identity) is not used to kill an idea, per the rules; it constrains the design (I5 must be cross-episode).
+- **D3.3** Scores computed by script (weights sum to 15, max 75). Top five: I6 (72), I1 (66), I3 (65), I7 (59), I4 (58). Five distinct themes covered (T5, T1, T4, T3/T5, T2).
+- **D3.4** I3 and I4 overlap in data; kept separate so Frank has a real choice, flagged as mergeable. I2 is offered as a sub-question of I1.
+
