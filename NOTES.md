@@ -143,3 +143,7 @@ No large downloads were made (metadata and a 10 kB API response only).
 - StockTwits JQD:DM dataset: article page opened (Li, Al Ansari & Kaufman 2025); PDF link **refused (PROVENANCE_REQUIRED)**; no data host found by search → "ask authors" in the proposal.
 - EmTract (Vamossy & Skog) offers 10k annotated StockTwits messages publicly (arXiv 2112.03868 text) — background resource, not used.
 
+### 4.6 Proposal 5 (I4, Robust or Sensitive)
+- Ran `pilot/tokenizer_pilot.py` (tokenizers only, from HF): ProsusAI/finbert and bert-base-uncased map 15/15 common retail emoji to [UNK]; RoBERTa-base and OLMo-2 0/15; cashtags split into 3–4 pieces. `yiyanghkust/finbert-tone` and `microsoft/deberta-v3-base` failed to load (missing `sentencepiece`/`tiktoken` in the venv; not installed to save time). Results in `pilot/tokenizer_pilot_results.json`.
+- Decision D4.5: present I4 as mergeable with I3 (FinDiv) in the pitch.
+
