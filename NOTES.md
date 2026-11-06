@@ -101,3 +101,27 @@ Gao, Jiang & Yan (2512.23847, PDF), Benhenda (2601.13770, PDF), Kong et al. (260
 - **D3.3** Scores computed by script (weights sum to 15, max 75). Top five: I6 (72), I1 (66), I3 (65), I7 (59), I4 (58). Five distinct themes covered (T5, T1, T4, T3/T5, T2).
 - **D3.4** I3 and I4 overlap in data; kept separate so Frank has a real choice, flagged as mergeable. I2 is offered as a sub-question of I1.
 
+## 4. Phase 3: proposals (6–7 Nov)
+
+### 4.1 Access tests run from the shell (6 Nov, ~21:30)
+| Resource | Command | Result |
+| --- | --- | --- |
+| Hugging Face Hub API (datasets/models metadata) | `curl https://huggingface.co/api/datasets/takala/financial_phrasebank` | **200** (not gated; licence CC-BY-NC-SA-3.0) — HF reachable from the shell, unlike earlier runs' assumption |
+| HF datasets: TFNS (`zeroshot/twitter-financial-news-sentiment`, MIT, 10k–100k), `ElKulako/stocktwits-emoji` (MIT, 100k–1M), `winddude/reddit_finance_43_250k` (GPL-3.0), `gbharti/finance-alpaca` (MIT), `pauri32/fiqa-2018`, `ChanceFocus/flare-fiqasa` | HF API | 200, not gated |
+| HF models: `allenai/OLMo-2-1124-7B`, `allenai/Olmo-3-1025-7B` (Apache-2.0), `EleutherAI/pythia-6.9b(-deduped)`, `datedgpt/datedgpt-2013…2024-base/-instruct` (20 repos) | HF API | 200, not gated |
+| `allenai/dolma` dataset | HF API | 200, licence ODC-By, not gated |
+| infini-gram public API `api.infini-gram.io` | curl | **403 (proxy)** from cloud shell → must be called from Frank's machine; Python package `infini-gram` 2.6.0 wheel downloadable from PyPI (local engine for downloaded indexes; small `v4_pileval_llama` index 2.3 GiB free) |
+| `emb-diversity` 0.1.0 (her lab's tool) | `pip download emb-diversity` | wheel downloaded OK |
+| GitHub: nlpsoc/emb-diversity, liujch1998/infini-gram, allenai/OLMo, SALT-NLP/multi-value, ArthurHeitmann/arctic_shift | `git ls-remote` | all reachable |
+| StockTwits public API `api.stocktwits.com/api/2/streams/symbol/GME.json` | curl | **200**, 30 latest messages with `body`, `created_at`, `user.username`, `entities.sentiment.basic` (e.g. "Bullish") — live data are personal data |
+| Reddit `reddit.com/r/wallstreetbets/about.json` | curl | 403 (proxy/Reddit blocks cloud IPs) |
+| SEC EDGAR (`sec.gov`, `data.sec.gov`) | curl | 403 from cloud shell (needs a declared User-Agent and a non-cloud IP; worked via web fetch in earlier runs) |
+| Stooq prices | curl | timeout (000) |
+| arxiv.org homepage | curl | 200 |
+No large downloads were made (metadata and a 10 kB API response only).
+
+### 4.2 Proposal 1 (I6, Same Question, Different Voice)
+- Verified quote in Choukhmane et al. §4.2 by a targeted re-fetch: "the null supply effect does not rule out differential responses to subtler markers of race … such as names, dialect, or contextual cues".
+- Added background: Hofmann et al. 2024 (Nature, [ABS]); Multi-VALUE (ACL 2023, [ABS]).
+- Decision D4.1: use synthetic situations + validated variety rewrites rather than real user prompts (GDPR and dialect-as-proxy for ethnicity, Art. 9).
+
