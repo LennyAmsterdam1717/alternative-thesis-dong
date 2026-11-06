@@ -147,3 +147,23 @@ No large downloads were made (metadata and a 10 kB API response only).
 - Ran `pilot/tokenizer_pilot.py` (tokenizers only, from HF): ProsusAI/finbert and bert-base-uncased map 15/15 common retail emoji to [UNK]; RoBERTa-base and OLMo-2 0/15; cashtags split into 3–4 pieces. `yiyanghkust/finbert-tone` and `microsoft/deberta-v3-base` failed to load (missing `sentencepiece`/`tiktoken` in the venv; not installed to save time). Results in `pilot/tokenizer_pilot_results.json`.
 - Decision D4.5: present I4 as mergeable with I3 (FinDiv) in the pitch.
 
+## 5. Phase 4: pitch pack (7 Nov)
+- `pitch_summary.md` written: recommendation **P1 first, P3 second**, P2 as the ambitious alternative.
+- Email body counted by script: 155 words (limit 180).
+- Checks: `references.bib` parses with bibtexparser 2.x (69 entries, 0 failed blocks, no duplicate keys, every entry has a `note`); tags in notes: FT 15, ABS 53, BG 8, UNVERIFIED 1; background share 8/69 ≈ 12% (≤ 15%). Proposal totals match `ideas_10.md` (72, 66, 65, 59, 58).
+
+## Status / where I stopped (7 Nov 2026)
+- **Done:** Phase 0 (`supervisor_profile.md`), Phase 1 (`lit_review_dong.md`), Phase 2 (`ideas_10.md`, 10 ideas + 3 killed), Phase 3 (five proposals, each committed separately, two with pilots actually run), Phase 4 (`pitch_summary.md`, `README.md`). Everything is committed and pushed to `main`.
+- **Not done / caveats:**
+  - `HCML-` repo is empty, so the course summary rests on her homepage, Frank's recorded coursework and public student summaries.
+  - Google Scholar not queried (no surfaced URL; direct fetch would hit an unanswerable approval prompt). DBLP blocked (Anubis). "Cited by" checks are left for Frank.
+  - Refused or failed fetches: her homepage and UU staff page by direct URL (worked after search), arXiv abs 2511.23041 by direct URL, JQD:DM StockTwits PDF (provenance), arXiv HTML 2610.23060 (rate-limited twice).
+  - Most 2026 papers are [ABS]; [FT] only for 15 entries (mostly hers plus Gao et al., Look-Ahead-Bench, Kong et al., Choukhmane et al., Bisharat & Hean).
+  - Theses she supervised: not findable; ask her.
+  - Access from the cloud shell: infini-gram API, SEC EDGAR, Reddit and Stooq are blocked (403/timeout) → these steps must run from Frank's laptop. Hugging Face, PyPI, PyTorch index, GitHub and the public StockTwits API were reachable.
+  - Pilots are feasibility checks (one seed, n = 500), not results.
+- **Suggested next actions for Frank:**
+  1. Send the email in `pitch_summary.md` §3 (edit names/dates as needed).
+  2. Before the meeting, open the PDFs of Choukhmane et al. (2608.01607) and Burema et al. (LREC 2026) for P1, and EmbDivBench (EMNLP 2026) for P3.
+  3. Ask the questions in the meeting brief (scope, budget for Prolific, GPU, co-supervision with Karnstedt-Hulpuș, 1 December start).
+  4. Run a Google Scholar "cited by" check on Choukhmane et al. and Gao et al. to confirm nobody has done the dialect or corpus-frequency step since October 2026.
