@@ -125,3 +125,10 @@ No large downloads were made (metadata and a 10 kB API response only).
 - Added background: Hofmann et al. 2024 (Nature, [ABS]); Multi-VALUE (ACL 2023, [ABS]).
 - Decision D4.1: use synthetic situations + validated variety rewrites rather than real user prompts (GDPR and dialect-as-proxy for ethnicity, Art. 9).
 
+### 4.3 Proposal 2 (I1, MemTrace)
+- Verified quotes in Gao et al. by targeted re-fetch: App. C Step 5 "confounds in which LAP proxies for entity salience or attention"; §3.2 "We adopt Llama-3.3-70B in this paper for replicability."; §4 "it can be run on any model, any prompt, and any sample".
+- DatedGPT is built from FineWeb-Edu filtered by crawl year (arXiv 2603.11838, search text); its authors promise to release data "upon paper acceptance" (HTML v1 text). Models are already on HF (20 repos).
+- infini-gram indexes listed in the docs include Pile-train, Dolma v1.7, OLMoE/OLMo-2 mixes; 2606.06286 reports a 52 TB Dolma 3 index (served publicly or not: unverified).
+- Decision D4.2: I2 (visibility prior) folded in as RQ2's firm-size/country analysis rather than a separate thesis.
+- Decision D4.3: Kodak example kept at "late July 2020" (exact day not verified in this run).
+
